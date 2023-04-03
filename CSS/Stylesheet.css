@@ -1,0 +1,219 @@
+/* common css start */
+ *{
+    margin:0;
+    pading:0;
+    outline:0;
+    box-sizing:boder-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    }  
+ul {
+    list-style-type:none;
+    } 
+a   {
+    text-decoration:none;
+    }   
+    .container{
+        width:1170px;
+        margin:auto;
+    }
+    .row{
+         display:flex;
+         flex-wrap: wrap;
+         
+    }
+    .section_info{
+      text-align:center;
+    }
+    .section_info h2{
+      font-size: 46px;
+      font-weight: 800;
+      color: #02918c;
+      text-transform: uppercase;
+     }
+    .section_info p{
+      font-size: 16px;
+      color:#7e8287;
+      margin: auto;
+      line-height: 41px;
+    }
+
+    .section_info p b{
+      font-size: 23px;
+      font-weight: 800;
+    }
+
+ /* // common css end */
+ /* Nav Section Css Start */
+ #navbar{
+    background:#02918c;
+ }
+ #navbar .row{
+    justify-content:space-between;
+    align-items:center;
+ }
+ #navbar ul li a{
+    color: #ffffff;
+    font-size:12px;
+    font-weight:800; 
+    text-transform:uppercase;
+    padding:26px 25px;
+    display:inline-block;
+    transition: 0.7s;
+     
+ }
+ #navbar ul li a:hover{
+    background:#cfc91d;
+    color:#0b1016;
+ }
+ /* //Nav Section Css end */
+
+ /* Banner Section Start */
+    #banner{
+        height:728px;
+        background-image:url(../Image/banner.jpg);
+        background-size: cover;
+        background-position: center;
+        positon:relative;
+        z-index:1;
+                   
+     }  
+     #banner::after{
+      content:'';
+      position:absolute;
+      background:rgba(0, 0, 0, 0.6);
+      inset:0;
+      z-index:-1;
+     }
+
+    #banner .container{
+      height:100%;
+    }   
+    #banner .row{
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color:#ffffff;
+    }
+    #banner img{
+      display: block;
+      margin:51px auto;
+    }
+    #banner h3{
+      font-size: 30px;
+      font-weight:400;
+      line-height: 25px;
+
+    }
+    #banner h1{
+      font-size: 68px;
+      font-weight:800;
+      line-height: 75px;
+      text-transform: uppercase;
+      letter-spacing: 30px;
+
+    }
+    #p{
+      font-size: 18px;
+      line-height: 33px;
+
+    }
+    #banner a{
+      font-size: 14px;
+      color: #0b1016;
+      background: #cfc91d;
+      font-weight: 800;
+      display: inline-block;
+      padding: 19px 42px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+        
+    }
+
+ /* // Banner Section End */
+ 
+
+ /* About Section CSS Start */
+ #about{
+  padding: 97px 0;
+ }
+ #about .section_info p{
+     width: 875px;                           
+ }
+ #about .about_item{
+  text-align: center;
+  color: #7e8287;
+  border-right: 1px solid #7e8287;
+  padding: 50px 55px;
+  margin-top: 50px;
+  width: 25%;
+  
+ }
+ #about .about_item:last-child{
+  border:none;
+ }
+ #about .about_item i{
+  font-size: 40px; 
+  color: #02918c; 
+ } 
+ #about .about_item h3{
+  font-size: 16px;
+  font-weight: 800;
+  margin: 29px 0;
+  }
+ #about .about_item p{
+  font-size: 11p;
+ }
+ /* // About Section CSS End */
+ /* Service section CSS start */
+ #service{
+  background-image: url(../Image/services.jpg);
+  background-size: cover;
+  background-position: center;
+ 
+ }
+ #service .inner_container{
+    width: 50%;
+  
+ }
+ #service .section_info{
+  text-align: left;
+      
+ }
+ #service .service_item{
+  width: 50%;
+ }
+ /* //Service section CSS end */
+ /* mywork section css start */
+ #mywork{
+  padding-top: 80px;
+ }
+ #mywork .section_info{
+  margin-bottom: 50px;
+ }
+  #mywork .section_info p{
+  width: 675px;
+ }
+ #mywork .mywork item{
+  width: 25%;
+  position: relative;
+ }
+ #mywork .mywork img{
+  width: 100%;
+  display: block;
+ }
+ #mywork .mywork_item .overlay{
+  position: absolute;
+  background: #02918c;
+  inset: 20px 28px;
+  transition: 1s;
+  transform: scale(0) skew(45deg);
+  transform-origin: left top;
+ }
+ #mywork .mywork_item:hover .overlay{
+  transform: scale(1) skew(0deg);
+ }
+ /* // mywork section css end */
+
